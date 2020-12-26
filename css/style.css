@@ -1,0 +1,1362 @@
+
+
+*
+{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'open sans',sans-serif;
+}
+
+html, body {overflow-x: hidden;}
+
+h1{
+	text-align: center;
+	font-size:50px;
+	font-weight:normal;
+	color:#44D5C6;
+}
+
+h2{
+	text-align: center;
+	font-weight: normal;
+	font-size:35px; 
+	color:#44D5C6;
+}
+
+h3{
+	text-align: center;
+	font-size:30px;
+	font-weight: normal;
+	 
+}
+
+
+h4{
+	color:#44D5C6;
+}
+
+ p{
+	color:#AEFEFF; 
+	font-size:20px;
+	font-weight:lighter;
+}
+
+/*classes auxiliares que vamos usar em todo o site */
+.container{
+	max-width:1280px;
+	margin:0 auto;
+	padding:0 2%;
+}
+
+.w75{
+	-ms-flex:75%;
+	flex:75%;
+	
+}
+.w60{
+	width: 60%;
+	float:left;
+}
+
+
+.w50{
+	width: 50%;
+	float: left;
+}
+
+
+.w40{
+	width: 40%;
+	float:left;
+}
+
+
+
+.w33{
+	float: left;
+	width: 33.3%;
+}
+
+.w25{
+	-ms-flex: 25%; 
+	flex: 25%;
+ }
+
+.center{text-align: center;}
+
+.clear{clear:both;}
+
+/*-----------------fim---------*/
+
+/*classes do meu site */
+body{
+	background:rgb(56, 54, 54);
+}
+header{
+	padding: 10px 0;
+}
+/*MENU COMEÇO*/
+
+.menu_principal01 {
+	background-color:#44D5C6;
+	overflow: hidden;
+	margin: -15px -5px;
+	padding-bottom:10px;
+  }
+
+  /* Estilize os links dentro da barra de navegação */
+  .logo img{
+	float: right;
+	position: absolute;top:0px;
+	text-decoration:none;
+	padding-top:7px;
+	width: 60px;
+	margin-right:6px;
+	border-radius:1px;
+}
+
+.logo h4{
+	position: absolute;top:0px;
+	text-decoration:none;
+	padding-top:8px;
+	width: 60px;
+	margin-left:80px;
+	color:white;
+	float:right;
+}
+
+  .menu_principal01 a {
+	float: right;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	
+  }
+  
+  /*Adicione uma classe ativa para destacar a página atual */
+  .marcador {
+	background-color: #4CAF50;
+	color: white;
+	
+  }
+  
+  /* Ocultar o link que deve abrir e fechar o menu_principal01 em telas pequenas*/
+  .menu_principal01 .icon {
+	display: none;
+  }
+  
+  /* recipiente do produto.produto01 - necessário para posicionar o conteúdo do produto.produto01 */
+  .produto01 {
+	float:right;
+	overflow: hidden;
+  }
+  
+  /* Defina o estilo do botão suspenso para caber dentro do menu_principa */
+  .produto01 .bt_sub_menu {
+	font-size: 17px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+  }
+
+  .igual_prod{
+	  margin-top: -4px;
+  }
+  
+  /* Estilize o conteúdo suspenso (oculto por padrão) */
+  .produto01-submenu {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 2;
+  }
+  
+  /* Estilize os links dentro do menu suspenso*/
+  .produto01-submenu a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display:block;
+	text-align: left;
+  }
+  
+  /* Adicione um fundo escuro nos links do .menu_principal01 e o botão suspenso ao passar o mouse */
+  .menu_principal01 a:hover, .produto01:hover .bt_sub_menu {
+	background-color: #555;
+	color: white;
+  }
+  
+  /* Adicionar um fundo cinza aos links suspensos ao passar o mouse */
+  .produto01-submenu a:hover {
+	background-color: #ddd;
+	color: black;
+	
+  }
+  
+  /* Mostra o menu suspenso quando o usuário move o mouse sobre o botão suspenso */
+  .produto01:hover .produto01-submenu {
+	display: block;
+  }
+/*-----------------fim---------*/
+
+/*-começo da slide imagem-*/
+* {box-sizing:border-box}
+
+.img_slide{
+	padding-top:50px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  padding-top: 10px;
+}
+
+/* Ocultar as imagens por padrão */
+.mySlides {
+  display:none;
+  position: relative;
+}
+
+/* Botões seguinte e anterior */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posicione o "próximo botão" à direita */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Ao passar o mouse, adicione uma cor de fundo preta com um pouco de transparência */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Texto da legenda */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Texto numérico (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Os pontos / marcadores / indicadores */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*Animação  */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*fim da imagem slide*/
+
+/*----section main bg feminino----*/
+section.main-bg-f{
+	position: relative;
+	width: 100%;
+	height:500px;
+	padding:200px 0 200px 0;
+	background-image:url(../img/slides.4.jpeg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	text-align: center;
+	margin-top:10px;
+	border-radius:5px;
+}
+
+.titulo-pagi{
+	text-align: center;
+	padding-top:10px;
+}
+
+section.main-bg-f> .container{
+	position: relative;
+	z-index: 2;  /* z-index serve para dar valor e relevancia a um elemeto ficar a frente ou atraz um do outro */
+	padding-bottom:10px;
+}
+
+
+.overlay-f{
+	z-index:1;   /* z-index serve para dar valor e relevancia a um elemeto ficar a frente ou atraz um do outro */
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*background:rgba(0,0,0,0.5); definir opacidade em imagem */
+	left: 0 ;
+	top: 0;
+}
+
+section.main-bg-f h1{
+	text-align: center;
+	font-size:50px;
+	font-weight:normal;
+	color:#44D5C6;
+
+}
+
+section.main-bg-f h2{
+	text-align: center;
+	font-size:35px;
+	font-weight:normal;
+	color:#44D5C6;
+	
+}
+
+section.main-bg-f p{
+	color:#AEFEFF; 
+	font-size:20px;
+	text-align:left;
+	padding-top:20px;
+	
+}
+
+/* pagina masculino main-bg-m */
+section.main-bg-m{
+	position: relative;
+	width: 100%;
+	padding:200px 0 200px 0;
+	background-image:url(../img/slide07.jpeg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	text-align: center;
+	margin-top:10px;
+	border-radius:5px;
+}
+
+.titulo-pagi{
+	text-align: center;
+	padding-top:10px;
+}
+
+section.main-bg-m> .container{
+	position: relative;
+	z-index: 2;  /* z-index serve para dar valor e relevancia a um elemeto ficar a frente ou atraz um do outro */
+	padding-bottom:10px;
+}
+
+
+.overlay-m{
+	z-index:1;   /* z-index serve para dar valor e relevancia a um elemeto ficar a frente ou atraz um do outro */
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.5); /*definir opacidade em imagem */
+	left: 0 ;
+	top: 0;
+}
+
+section.main-bg-m h1{
+	text-align: center;
+	font-size:50px;
+	font-weight:normal;
+	color:#44D5C6;
+
+}
+
+section.main-bg-m h2{
+	text-align: center;
+	font-size:35px;
+	font-weight:normal;
+	color:#44D5C6;
+	
+}
+
+section.main-bg-m p{
+	color:#AEFEFF; 
+	font-size:20px;
+	text-align:left;
+	padding-top:20px;
+
+}
+/* fim da pagina masculi main-bg-m */
+
+/*main-bg-infatil*/
+section.main-bg-i{
+	position: relative;
+	width: 100%;
+	height:500px;
+	padding:200px 0 200px 0;
+	background-image:url(../img/slide_infantil.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	text-align: center;
+	margin-top:10px;
+	border-radius:5px;
+}
+
+.titulo-pagi{
+	text-align: center;
+	padding-top:10px;
+}
+
+section.main-bg-i> .container{
+	position: relative;
+	z-index: 2;  /* z-index serve para dar valor e relevancia a um elemeto ficar a frente ou atraz um do outro */
+	padding-bottom:10px;
+}
+
+
+.overlay-i{
+	z-index:1;   /* z-index serve para dar valor e relevancia a um elemeto ficar a frente ou atraz um do outro */
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.5); /*definir opacidade em imagem */
+	left: 0 ;
+	top: 0;
+}
+
+section.main-bg-i h1{
+	text-align: center;
+	font-size:50px;
+	font-weight:normal;
+	color:#44D5C6;
+
+}
+
+section.main-bg-i h2{
+	text-align: center;
+	font-size:35px;
+	font-weight:normal;
+	color:#44D5C6;
+	
+}
+
+section.main-bg-i p{
+	color:#AEFEFF; 
+	font-size:20px;
+	text-align:left;
+	padding-top:20px;
+
+}
+/*fim da main-bg-infatil*/
+
+/*comeco da section diferenciais */
+section.diferenciais{
+	padding:30px 0;
+	text-align: center;
+	
+}
+
+/*classe q estarei utilisando em toda parte do projeto*/
+.line-text{   
+	text-align: center; 
+	position: relative;
+	display:inline-block;
+	color:#44D5C6; 
+	right:40px;
+}
+
+.line-text > div{
+	position: absolute;
+	left: 0px;
+	top: 10px;
+	width: 200px;
+	height: 2px;
+	background:#44D5C6;
+	margin-left:33px;
+	
+}
+
+.line-text h2{
+	font-size:35px;
+	font-weight:normal;
+	text-align: center;
+	margin-left:35px;
+	padding-top:10px;
+}
+
+.icones-diferenciais{
+	margin-top:35px;
+}
+
+.box-icones-single{
+	float:left;
+	width:33.3%;
+	margin-bottom:20px;
+	padding:0 20px;
+}
+
+
+.box-icones-single h2{
+	color:#79F9F9;
+	font-size:40px;
+}
+
+.box-icones-single p{
+	color:#AEFEFF;
+	font-weight: lighter;
+	font-size:20px;
+}
+/*----------diferenciais fim---------*/
+
+/*comeco da cards*/
+
+section.cards-produ{
+	padding:30px 0;
+}
+
+.cards-single{
+	width: 23.3%;
+	float:left;
+	padding:50px ;
+	text-align: center;
+	
+}
+
+.cards-single img{
+	width: 120%;
+	height: 330px;
+	border-radius:10%;
+	padding-top:10px;
+}
+
+.cards-single h2{
+	font-weight: normal;
+	font-size:32px; 
+	color:#79F9F9;
+	
+}
+
+.cards-single h3{
+	font-weight: normal;
+	font-size:23px;
+	color:#44D5C6; 
+	padding:10px 0;
+}
+
+.cards-single p{
+	margin: 10px;
+	font-weight: lighter;
+	font-size:20px;
+	color:#AEFEFF; 
+	padding-bottom:20px;
+	border-bottom:2px solid #ccc;
+}
+
+
+  
+.cards-single input[type=submit]{
+	border-radius: 5px;
+	background: #09f4fc;
+	height:26px;
+	width:100px;
+	
+  }
+/*login*/
+div .lgn-rgst{
+	background: #f44336;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Defina um estilo para todos os botões */
+button {
+  background-color:#fafafa;
+  color:black;
+  padding: 9px 40px;
+  margin: 8px 0;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+  
+  margin-left:45%;
+  text-align:center;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Estilos extras para o botão de cancelamento*/
+.cancelbtn {
+  margin-left:3px;
+  background-color: #f44336;
+}
+
+/* Centralize a imagem e posicione o botão Fechar */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container-log {
+  padding: 16px;
+}
+
+.container-log button{
+	text-align: center;
+	margin-right:5px;
+	color:rgb(255, 255, 255);
+	background: #79F9F9;
+}
+
+
+span.usu_senha {
+  float: right;
+  padding-top: 16px;
+}
+
+span a{
+	border-radius: 5px;
+	text-align: center;
+}
+
+/* O Modal (plano de fundo) */
+.modelo {
+  display: none; /*Oculto por padrão  */
+  position: fixed; /*  Fique no lugar*/
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; /*Largura completa*/
+  height: 100%; /* Altura toda */
+  overflow: auto; /* Habilite a rolagem se necessário */
+  background-color: rgb(0,0,0); /* Cor reserva */
+  background-color: rgba(0,0,0,0.4); /* Preto com opacidade*/
+  padding-top: 60px;
+}
+
+/* Modelo Content/Box */
+.modelo-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;  /* 5% da parte superior, 15% da parte inferior e centralizado */
+  border: 1px solid #888;
+  width: 80%; /* Pode ser mais ou menos, dependendo do tamanho da tela*/
+}
+
+/* O botão Fechar (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Adicionar animação de zoom */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/*fim login*/
+
+/*roda pe*/
+footer.footer1{
+	background:#52aaa7; 
+	padding: 20px 0;
+	margin-left:px;
+	color: white;
+
+}
+
+footer.footer1 h2{
+	font-weight: normal;
+	font-size:32px; 
+	color:white;
+	
+}
+
+footer.footer1 p{
+	margin: 9px 0;
+	font-weight: lighter;
+	font-size:20px;
+	color:#AEFEFF; 
+
+}
+
+footer.footer1 a{
+	display: block;
+	color:#AEFEFF; 
+	margin-top: 9px;
+}
+
+div.group-icons a{
+	font-size:23px;
+	display: inline-block;
+	margin:15px 10px;
+}
+
+.group-icons fa-facebook{
+	background: #3B5998;
+  	color: white;
+}
+
+footer.footer2{
+	padding:18px 0;
+	background:#1B7971;
+	text-align: center;
+	color:#AEFEFF;  
+
+}
+
+.footer2 p{
+	font-size:20px;
+	color:#AEFEFF; 
+}
+/*pagina quem somos */
+section.main-bg-q{
+	position: relative;
+	width: 100%;
+	padding:200px 0 200px 0;
+	background-image:url(../img/slide_quem.jpeg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	text-align: center;
+	margin-top:10px;
+	border-radius:5px;
+}
+
+section.quem-somos{
+	padding:30px;
+	width: 100%;
+	background: red;
+	background-size:cover;
+	background-position: center;
+	background-repeat:no-repeat;
+	position:relative;
+}
+
+section.quem-somos h1{
+	text-align: center;
+	font-size:50px;
+	font-weight:normal;
+	color:#44D5C6; 
+	
+}
+
+section.quem-somos p{
+	color:#AEFEFF; 
+	font-size:20px;
+	font-weight:lighter;
+	margin-top:20px;
+}
+
+
+section.quem-somos > .contaianer{position:relative;z-index:101;}
+
+.overlay__quem-somos{
+	position:absolute;
+	left: 0;
+	top:0;
+	z-index: 100;
+	width:100%;
+	height: 100%;	
+}
+
+section .sobre-equipe-
+
+/*comeca container sobre__noticia*/
+section.sobre__noticia{
+	padding:30px 0;
+}
+
+/*efeito parallax na pagina sobre */
+section.parallax{
+	padding:30px 0;
+	width:100px;
+	height:280px;
+	min-width:100%;
+	background-image:url(../img/paralax-q.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	text-align:center;
+	background: red;
+}
+
+section.parallax h2{
+	font-weight: normal;
+	font-size:32px; 
+	color:#79F9F9;
+	text-align: center;
+}
+
+section.parallax p{
+	color:#AEFEFF; 
+	font-size:20px;
+	font-weight:lighter;
+	margin-top:20px;
+	text-align: center;
+}
+
+section.equipe > .contaianer{
+	padding:30px 0;
+	flex-wrap: wrap;
+	margin-bottom: -20px;
+}
+
+.equipe-circulos{
+	margin-top: 50px;
+	display: flex;
+	padding-bottom:40px;
+}
+
+.equipe-circulos-singles{
+	text-align:center;
+	padding:0 20px;
+	width:33.3%;
+}
+
+.equipe-circulos-singles h3{
+	margin-top:10px;
+	font-size:30px;
+	font-weight: normal;
+	color:#44D5C6; 
+	padding:10px 0;
+}
+.equipe-circulos-singles p{
+	color:#AEFEFF; 
+	font-size:20px;
+	font-weight:lighter;
+	margin-left:35px;
+	padding-right:50px;
+}
+
+.avatar-single{
+	position: relative;
+	width:60%;
+	padding-top:60%;
+	margin:0 auto;
+	
+}
+
+.avatar-single-container{
+	width: 100%;
+	height:100%;
+	position: absolute;
+	left: 0;
+	top:0;
+	border-radius:50%;
+	background-color: #ccc;
+	background-size: 100% 100%;
+}
+
+section.sobre__final{
+	background-color: rgb(000,000,000);
+	border-top:2px solid rgb(210,210,210);
+	padding: 10px;
+}
+
+.card-text{
+	margin-top: 10px;
+	width: 80%;
+	position:relative;
+	
+}
+
+.card-text img{
+	max-width: 100%;
+}
+
+.card-text h3{
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	color:black;
+	font-size:30px;
+	font-weight: normal;
+	 
+}
+
+section.sobre__final p{
+	color:#AEFEFF; 
+	font-size:20px;
+	font-weight:lighter;
+}
+
+
+	 /*contatos*/
+section.main-bg-c{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+	padding:100px 10px 100px 10px;
+	background-image:url(../img/contatos_slide.jpeg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	text-align: center;
+}	 
+
+section.main-bg-c > .container{
+	position: relative;
+	z-index: 2;  /* z-index serve para dar valor e relevancia a um elemeto ficar a frente ou atraz um do outro */
+}
+
+
+.overlay-{
+	z-index:1;   /* z-index serve para dar valor e relevancia a um elemeto ficar a frente ou atraz um do outro */
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.5); /*definir opacidade em imagem */
+	left: 0 ;
+	top: 0;
+}
+
+section.main-bg-c h1{
+	
+	font-size:50px;
+	font-weight:normal;
+	color:#57aaa7;
+
+}
+
+section.main-bg-c h2{
+	z-index:3;
+	text-align: center;
+	font-size:65px;
+	font-weight:normal;
+	color:#57aaa7;
+}
+
+section.main-bg-c p{
+	color:#ffffff; 
+	font-size:17px;
+	text-align:left;
+	margin-top:15px;
+
+}
+
+section.contato{
+	padding:15px 0px;
+}
+
+section.contato .w50{
+	padding:0;
+}
+
+.formulario h2{
+	text-align: center;
+	padding:4px;
+	border:0px solid #a8a7a7;
+	padding:4px 0;
+}
+
+.formulario input[type=text],
+.formulario input[type=email],
+.formulario input[type=cpf]{
+	width:100%;
+	height:40px;
+	border:3px solid #ccc;
+	margin-bottom:15px;
+	padding-left: 8px;
+}
+.formulario input[type=submit]{
+	border-radius: 5px;
+	background: #09f4fc;
+	height:26px;
+	width:100px;
+}
+
+.formulario textarea{
+	width:100%;
+	height:120px;
+	border:3px solid #ccc;
+	margin-bottom:15px;
+	padding: 10px;
+	resize: vertical;   /* resize vertical serve para caixa de texto nao abri para os lado e sim para baixo */
+}
+
+.tags-form{
+	padding-left:90px;
+
+}
+
+.tags-form p.tag-contato{
+	color:#AEFEFF;
+
+	padding:10px;
+	height:40px;
+	width: 100%;
+
+}
+
+/*compras*/
+body {
+	font-family: Arial;
+	font-size: 17px;
+	padding: 8px;
+ }
+  
+* {
+	box-sizing: border-box;
+ }
+  
+ .formu-compras{
+	display: -ms-flexbox; 
+	display: flex;
+	-ms-flex-wrap: wrap; 
+	flex-wrap: wrap;
+	margin: 0 -16px;
+	padding-top:10px;
+ }
+ 
+ .volta_a_comprar a{
+	
+	display: block;
+	color: #000000;
+	text-align: center;
+	
+	text-decoration: none;
+	font-size: 17px;
+ }
+  
+ .w25 {
+	-ms-flex: 25%; 
+	flex: 25%;
+ }
+  
+  .w50 {
+	-ms-flex: 50%; 
+	flex: 50%;
+ }
+  
+ .w75 {
+	-ms-flex: 75%; 
+	flex: 75%;
+	background: #222;
+ }
+  
+ .w25,
+ .w50,
+ .w75 {
+	padding: 0 16px;
+ }
+  
+ .container-comp{
+	background:#acacac;
+	padding: 5px 20px 15px 20px;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+ }
+  
+ input[type=text] {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+ }
+  
+ label {
+	margin-bottom: 10px;
+	display: block;
+ }
+  
+  
+ .icon-container {
+	margin-bottom: 20px;
+	padding: 7px 0;
+	font-size: 24px;
+ }
+  
+ .btn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 2px;
+	margin: 10px 0;
+	border: none;
+	width: 10%;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 17px;
+ }
+  
+ .btn:hover {
+	background-color: #45a049;
+ }
+  
+ a {
+	color: #2196F3;
+ }
+  
+ hr {
+	border: 1px solid lightgrey;
+ }
+  
+ span.price {
+	float: right;
+	color: grey;
+ }
+  
+/*fim da compras*/
+
+/*RESPONSIVEL*/
+/*MENU*/
+/* Quando a tela tiver menos de 600 pixels de largura, oculte todos os links, exceto o primeiro ("Home"). Mostrar o link que contém deve abrir e fechar o menu_principal01(.icon) */
+@media screen and (max-width: 600px) {
+	.menu_principal01 a:not(:first-child), .produto01 .bt_sub_menu {
+	  display: none;
+	}
+	.menu_principal01 a.icon {
+	  float: right;
+	  display: block;
+	}
+	.logo img{
+		width:50px;
+		margin-top:10px;
+	}
+
+	.logo h4{
+		width:30px;
+		display: none;
+		
+	}
+}
+  
+/* A classe "responsiva" é adicionada ao menu_principal01 com JavaScript quando o usuário clica no ícone. Esta classe faz com que o menu_principal tenha uma boa aparência em telas pequenas (exibir os links verticalmente em vez de horizontalmente) */
+@media screen and (max-width: 743px) {
+	.menu_principal01.responsive {position: relative;}
+	.menu_principal01.responsive a.icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.menu_principal01.responsive a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+	.menu_principal01.responsive .produto01 {float: none;}
+	.menu_principal01.responsive .produto01-submenu {position: relative;}
+	.menu_principal01.responsive .produto01 .bt_sub_menu {
+	  display: block;
+	  width: 100%;
+	  text-align: left;
+	}
+  }
+/*MENU FIM*/
+
+/* imagem destaque*/
+.slideshow-container{
+	width:100%;
+}
+/*login*/
+/* Alterar os estilos do botão span e cancelar em telas extra pequenas */
+@media screen and (max-width: 300px) {
+	span.psw {
+	   display: block;
+	   float: none;
+	}
+	.cancelbtn {
+	   width: 100%;
+	}
+  }
+
+/* home responsivel difrenciais*/
+@media screen and (max-width: 768px){
+.box-icones-single{
+	width: 100%;
+}
+
+/* home imagems*/
+section.cards-produ{
+	width:90%;
+	margin-left:5px;
+}
+
+.cards-single{
+	width: 100%;
+}
+
+.cards-single img{
+	display: block;
+	margin: 5px auto;
+	max-width: 100%;
+}
+
+div line text {
+	text-align: center;
+}
+
+/*++quem-somos equipe arrumar+++*/
+.equipe-circulos-singles{
+	width:100%;
+}
+
+.parallax{
+	width: 50%;
+}
+
+.tags-form{
+	padding-left:0px;
+
+}
+/*formularios*/	
+.formulario input[type=text],
+.formulario input[type=email]{
+	margin-bottom:0px;    
+}
+
+
+
+.formulario textarea{
+	margin-bottom:0px;
+}
+
+footer.footer1{
+	text-align: center;
+
+}
+	
+.footer2{
+	text-align: center;
+	
+}	
+
+	
+.sobre-equipe-{
+	width: 100%;
+}
+
+
+.sobre__single__noticia img{
+	width:100%;
+}
+
+.sobre__single__noticia p{
+	margin-top:20px;
+	width: 100%;
+}
+
+
+
+
+}	
+
+/*---- quem somos ----*/
+
+
+@media screen and (max-width:500px){
+	.cards-single {
+		width: 100%;
+	}
+
+	.cards-single{
+		padding: 10px;
+	}
+
+}
+
+
+/*---- fim do responsivel----*/
+
+/*responsivo compra form*/
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+	.formu-compra{
+	  flex-direction: column-reverse;
+	}
+	.w25 {
+	  margin-bottom: 20px;
+	}
+}
+
+.dv{
+	width: 371;
+	height: 750;
+	cursor: pointer;
+	background-image:url(../img/tenis_galeria1.jpg);
+}

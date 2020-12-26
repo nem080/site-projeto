@@ -1,0 +1,322 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+	<title>Trabalho-Desenvolvimento-Web </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0 maximum-scale=1.0"> <!-- Definir a janela de visualização para que seu site tenha uma boa aparência em todos os dispositivos -->
+	<meta name="description" content="Desenvolvimento Web"> <!-- Defina uma descrição de sua página da web: -->
+	<meta name="keywords"content="html,css,php, JavaScript"> <!-- Defina palavras-chave para mecanismos de pesquisa: -->	
+	<meta name="author" content="Rogisvaldo João Dos Santos"> <!-- meta tag do autor da pagina -->
+	<meta http-equiv="refresh" content="10"> <!-- essa meta tag serve para atualizar a pagina automatica  -->
+	<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- link local da pagina externa do css -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> <!-- link local da pasta de font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet"> <!-- referencia de font -->
+	<script src="js/scritpt.js"></script>
+  </head>
+
+  
+  <body style="background:rgb(29, 28, 28);">
+
+		   <!-- aqui é o começo do meu menu-->
+	<header>
+		<!--logo-->
+		<div class="logo">
+		<a href="Home.html">
+		<img src="img/SÓ_LOGO.001.jpeg">
+		<h4>Estácio Sports</h4>
+		<div class="clear"></div>	
+		</div>
+						
+		<!-- aqui é o começo do meu menu-->
+		<div  class="menu_principal01" id="menu01">
+			<a href="compra.html"><i class="fa fa-shopping-cart"></i></a>
+			<a onclick="document.getElementById('id01').style.display='block'" style="width:auto; color: #f1f1f1; float: right;">Login</a>
+			<div id="id01" class="modelo">
+		
+				<form class="modelo-content animate" action="php/login.php" method="post">
+					<div class="imgcontainer">
+						<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close modelo">&times;</span>
+						<i style="width:100%;" class="fa fa-user-circle" aria-hidden="true"></i>
+					</div>
+					<div class="container-log">
+						<label for="uname"><b>nome do usuário</b></label>
+						<input type="text" placeholder="Nome usuario"  name="log_name" required>
+										
+						<label for="psw"><b>senha</b></label>
+						<input type="password" placeholder="Senha" name="log_senha" required>
+												
+						<button type="submit">Resgistra</button>
+						<label>
+						<input type="checkbox" checked="checked" name="Lembrar"> Lembrar me
+						</label>
+					</div>
+									
+					<div class="container-log" style="background-color:#f1f1f1">
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+						<span class="usu_senha">Esqueceu <a href="#" style="color:black">Senha?</a></span>
+					</div>
+				</form>
+			</div>
+						
+			<!--fim login-->
+							
+			<a href="Quem somos.html">Equipe</a>
+			<a href="Contato.html">Contato</a>
+			<div class="produto01">
+				<button  class="bt_sub_menu">Produtos
+				<i class="fa fa-caret-down"></i> 					 
+				</button>
+				<div class="produto01-submenu">
+					<a href="feminino.html" >Feminino</a>
+					<a href="masculino.html">Masculino</a>
+					<a href="infantil.html">Infantil</a>
+				</div>
+			</div>
+			<a href="Home.html"class="marcador" >Home</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			<div class="clear"></div>
+		</div>
+				
+	</header>
+
+	<!-- Slide-img-container -->
+		<div class="slideshow-container">
+			<!--Img largura total com número e texto de legenda -->
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 1</div>
+			  <img src="img/slide.1.jpeg" style="width:100%">
+			  <div class="text">Marcas</div>
+			</div>
+		  
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 2</div>
+			  <img src="img/slide2 .jpeg" style="width:100%">
+			  <div class="text">Nike</div>
+			</div>
+		  
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="img/slides.3.jpeg" style="width:100%">
+			  <div class="text">Nova coleção</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 4</div>
+				<img src="img/ouse_ser_brasileiro_nike.png" style="width:100%">
+				<div class="text">Brazil Berço Do Futebol</div>
+			  </div>
+			  <div class="mySlides fade">
+				<div class="numbertext">5 / 5</div>
+				<img src="img/slide5adidas .jpg" style="width:100%">
+				<div class="text">Adidas Sem Diferencia</div>
+			  </div>
+			  <div class="mySlides fade">
+				<div class="numbertext">6 / 6</div>
+				<img src="img/slide7paraolimpico.jpg" style="width:100%">
+				<div class="text">Quebrando Barreiras</div>
+			  </div>
+			  <div class="mySlides fade">
+				<div class="numbertext">7 / 7</div>
+				<img src="img/slide07.jpeg" style="width:100%">
+				<div class="text">Vem junto</div>
+			  </div>
+		  
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		  <br>
+		  
+		  <!-- The dots/circles -->
+		  <div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+			<span class="dot" onclick="currentSlide(6)"></span>
+		  </div>
+		
+		
+
+		 
+   <!--começa minha diferencias -->
+	<section class="diferenciais"> 
+		<div  class="container"><!-- classe auxiliares-->
+			<div class="line-text"> 
+				
+				<h2 >Experiencia do usuario </h2>
+			</div>
+			<!--icones diferenciais-->
+			<div class="icones-diferenciais">
+				<div class="box-icones-single">
+					<h2><i class="fa fa-comments-o" aria-hidden="true"></i></h2>
+					<h4>HISTÓRIA ESTILO</h4>
+					<p>O esporte mantém o corpo e a mente em forma.
+						E as pessoas mais próximas. Com o esporte, 
+						temos o poder de mudar vidas. Pode ser através
+						de histórias emocionantes e atletas que te incentivam
+						a levantar, fazer alguma coisa. Ou quem sabe uma simples
+						tecnologia de performance em uma loja de material esportivo,
+						na medida para melhorar o seu desempenho, quebrar seu recorde.
+						</p>
+				</div> <!--box single  -->
+				
+				<div class="box-icones-single">
+					<h2><i class="fa fa-comments-o" aria-hidden="true"></i></h2>
+					<h4>Sua Loja de Esportes </h4>
+					<p>
+						Design adidas para atletas de todos os tipos. Mentes criativas que amam mudar o jogo.
+						Desafiar o bom senso.
+						Quebrar as regras, escrever outras. Quebrar estas regras também. Somos a loja de 
+						esportes que fornece roupas pré-jogo para times e craques que precisam de foco total.
+						Fabricamos produtos que cruzam a linha de chegada e vencem a partida com você.	  
+					</p>
+				</div> <!--box single  -->
+
+				<div class="box-icones-single">
+					<h2><i class="fa fa-comments-o" aria-hidden="true"></i></h2>
+					<h4>servimos para melhor atente-lo</h4>
+					<p>Não é à toa que todos sentem-se em casa na Estácio sports: corredores, jogadores 
+						de basquete, boleiros e qualquer um que goste de treinar. Tanto faz se você 
+						gosta de natureza e adrenalina, ou da paz interior, do yoga e da cidade. 
+						As três listras estão em tudo. Na cena musical, palcos, festivais. Mentalizando a 
+						vitória, antes do apito inicial. </p>
+				</div> <!--box single  -->
+				<div cless="clear"></div><!-- classe auxiliares-->
+			</div> <!--fim icones-diferenciais -->
+		</div>
+	</section>
+
+		<!--line-text-->
+	 		<div  style="margin-top:50px;" class="line-text">
+			
+			<h2>Produtos em destaque </h2>
+		 	</div>
+	<!--começo da sect cards-->
+	<section class="cards-produ">
+		<div class="container"><!-- classe auxiliares-->
+			<div class="cards-single">
+				<a href="masculino.html">
+			<img src="img/m10.jpg" all="" title="">
+				</a>
+				<h2>Brasil</h2>
+				<p>Camisa retro <br> R$ 700,00</p>
+				<a href="compra.html"><input type="submit" name="acao" value="Comprar"></a>
+			</div>
+			<div class="cards-single">
+				<a href="feminino.html">
+			<img src="img/f1.jpeg" all="" title="">
+				</a>
+				<h2>Adidas</h2>
+				<p>Conjunto adidas R$ 400,00</p>
+				<a href="compra.html"><input type="submit" name="acao" value="Comprar"></a>
+			</div>
+			<div class="cards-single">
+				<a href="infantil.html">
+			<img src="img/roupa10.jpeg" all="" title="">
+				</a>
+				<h2>Nike</h2>
+				<p>Conjunto Nike R$ 350,00</p>
+				<a href="compra.html"><input type="submit" name="acao" value="Comprar"></a>
+			</div>
+			<div class="cards-single">
+				<a href="masculino.html">
+			<img src="img/m1.jpeg" all="" title="">
+				</a>
+				<h2>Tenis Nike</h2>
+				<p>Nike air max preto R$ 500,00</p>
+				<a href="compra.html"><input type="submit" name="acao" value="Comprar"></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</section>
+ <!--fim da sect cards-->
+
+ <!-- rodape comeco-->
+ <footer class="footer1">
+	<div class="container"><!-- classe auxiliares-->
+		   <div class="w33"><!-- classe auxiliares-->
+			   <h2>links úteis</h2>
+			   <a href="">Atendimento</a>
+			   <a href="https://inscricoes.estacio.br/?gclid=Cj0KCQjwtZH7BRDzARIsAGjbK2ZGe_JP9m7TZP3BN4Sjfe-K9zCsXxIjk7KFd5VTNos1qkoJwRFHoQYaAiAmEALw_wcB">Estácio de sá</a>
+
+		   </div>
+		   <div class="w33"><!-- classe auxiliares-->
+			   <h2>Conecte-se conosco</h2>
+			   <div class="group-icons">
+				   <a href="https://www.facebook.com/nenjoao"><i class="fa fa-facebook"></i></a>
+				   <a href="https://www.instagram.com/_nem080/"><i class="fa fa-instagram"></i></a>
+				   <a href="link whatssap"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+			   </div>
+		   </div>
+
+		   <div class="w33"> <!-- classe auxiliares-->
+				<h2>Aonde estamos?</h2>
+				<p><i class="fa fa-map-marker" aria-hidden="true"></i>Av. Aonde judas perdeu as botas 1010 - Coqueiros, Florianópolis - SC, 88088-000</p>
+				<p><i class="fa fa-phone" aria-hidden="true"></i>(xx)xxx-xxxx</p>
+		   </div>
+		<div class="clear"></div>
+	</div>
+ </footer>
+
+ <footer class="footer2">
+	<div class="container">
+	<p>Todos Diretos Rservado</p>
+	</div>
+ </footer>
+<!-- fim do rodape-->
+	
+<script>
+//menu 
+
+
+//slide 
+		var slideIndex = 1;
+showSlides(slideIndex);
+
+// Controles seguinte / anterior
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Controles de imagem em miniatura
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+	//login
+	// obtenha a versao
+	var modelo = document.getElementById('id01');
+	
+	//Quando o usuário clica em qualquer lugar fora da versão, feche-o
+	window.onclick = function(event) {
+		if (event.target == modelo) {
+			modelo.style.display = "none";
+		}
+	}
+
+</script>
+
+
+</body>
+</html>
+
+

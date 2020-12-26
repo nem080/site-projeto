@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- global site tag (gtag,js) - google Analytics -->
+   
+      <title>Trabalho-Desenvolvimento-Web </title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0 maximum-scale=1.0"> <!-- Definir a janela de visualização para que seu site tenha uma boa aparência em todos os dispositivos -->
+      <meta name="description" content="Desenvolvimento Web"> <!-- Defina uma descrição de sua página da web: -->
+      <meta name="keywords"content="html,css,php, JavaScript"> <!-- Defina palavras-chave para mecanismos de pesquisa: -->	
+      <meta name="author" content="Rogisvaldo João Dos Santos"> <!-- meta tag do autor da pagina -->
+      <meta http-equiv="refresh" content="10"> <!-- essa meta tag serve para atualizar a pagina automatica  -->
+      <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- link local da pagina externa do css -->
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> <!-- link local da pasta de font -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet"> <!-- referencia de font -->
+      <script src="js/scritpt.js"></script>
+    </head>
+ <body>
+ 		  
+			   <!-- aqui é o começo do meu menu-->
+			<header>
+				<!--logo-->
+				<div class="logo">
+				<a href="Home.html">
+				<img src="img/SÓ_LOGO.001.jpeg">
+				<h4>Estácio Sports</h4>
+				<div class="clear"></div>	
+				</div>
+								
+				<!-- aqui é o começo do meu menu-->
+				<div  class="menu_principal01" id="menu01">
+					<a href="compra.html"><i class="fa fa-shopping-cart"></i></a>
+					<a onclick="document.getElementById('id01').style.display='block'" style="width:auto; color: #f1f1f1; float: right;">Login</a>
+					<div id="id01" class="modelo">
+										
+						<form class="modelo-content animate" action="php/login.php" method="post">
+							<div class="imgcontainer">
+								<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close modelo">&times;</span>
+								<i style="width:100%;" class="fa fa-user-circle" aria-hidden="true"></i>
+							</div>
+							<div class="container-log">
+								<label for="uname"><b>nome do usuário</b></label>
+								<input type="text" placeholder="Nome usuario"  name="log_name" required>
+												
+								<label for="psw"><b>senha</b></label>
+								<input type="password" placeholder="Senha" name="log_senha" required>
+														
+								<button type="submit">Resgistra</button>
+								<label>
+								<input type="checkbox" checked="checked" name="Lembrar"> Lembrar me
+								</label>
+							</div>
+											
+							<div class="container-log" style="background-color:#f1f1f1">
+								<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+								<span class="usu_senha">Esqueceu <a href="#">Senha?</a></span>
+							</div>
+						</form>
+					</div>
+								
+					<!--fim login-->
+									
+					<a href="Quem somos.html">Equipe</a>
+					<a href="Contato.html">Contato</a>
+					<div class="produto01">
+						<button  class="bt_sub_menu">Produtos
+						<i class="fa fa-caret-down"></i> 					 
+						</button>
+						<div class="produto01-submenu">
+							<a href="feminino.html" class="marcador" >Feminino</a>
+							<a href="masculino.html">Masculino</a>
+							<a href="infantil.html">Infantil</a>
+						</div>
+					</div>
+					<a href="Home.html">Home</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+					<div class="clear"></div>
+				</div>
+						
+			</header>
+
+  
+	<section class="main-bg-f">
+		<div class="overlay-f"></div>
+		<div class="container">
+	</section>
+
+	<div class="titulo-pagi"><h1>Feminino</h1></div>
+		
+  <section class="cards-produ">
+ 	<div class="container"><!-- classe auxiliares-->
+		<div class="cards-single">
+			<a href="compra.html">
+		<img src="img/f1.jpeg" all="" title="">
+			</a>
+			<h2>Nike</h2>
+			<p>Conjunto adidas R$ 400,00 <br> cod:1</p>
+			<a href="compra.html"><input type="submit" name="acao" value="Comprar"></a>
+		</div>
+		<div class="cards-single">
+			<a href="compra.html">
+		<img src="img/f2.jpg" all="" title="">
+			</a>
+			<h2>Adidas</h2>
+			<p>Conjunto Adidas R$ 300,00 <br> cod:2</p>
+			<a href="compra.html"><input type="submit" name="acao" value="Comprar"></a>
+		</div>
+		<div class="cards-single">
+			<a href="compra.html">
+		<img src="img/f12.jpg" all="" title="">
+			</a>
+			<h2>Tênis Puma</h2>
+			<p>Puma rose R$ 500,00 <br> cod:3</p>
+			<a href="compra.html"><input type="submit" name="acao" value="Comprar"></a>
+		</div>
+		<div class="cards-single">
+			<a href="compra.html">
+		<img src="img/f3.png" all="" title="">
+			</a>
+			<h2>Adidas</h2>
+			<p>conjunto Adidas <br> R$ 690,99 <br> cod:4</p>
+			<a href="compra.html"><input type="submit" name="acao" value="Comprar"></a>
+		</div>
+		<div class="cards-single">
+			<a href="compra.html">
+		<img src="img/f4.png" all="" title="">
+			</a>
+			<h2>Tênis</h2>
+			<p>Adidas black R$ 500,00 <br> cod:5</p>
+			<a href="compra.html"><input type="submit" name="acao" value="Comprar"></a>
+		</div>
+		<div class="cards-single">
+			<a href="compra.html">
+		<img src="img/f5.jpg" all="" title="">
+			</a>
+			<h2>Adidas</h2>
+			<p>Chinelo verão R$ 40,00 <br> cod:6</p>
+			<a href="compra.html"><input type="submit" name="acao" value="Comprar"></a>
+		</div>
+		<div class="cards-single">
+			<a href="compra.html">
+		<img src="img/f6.jpg" all="" title="">
+			</a>
+			<h2>Adidas</h2>
+			<p>Blusa Adidas <br> R$ 300,00 <br> cod:7</p>
+			<a href="compra.html"><input type="submit" name="acao" value="Comprar"></a>
+		</div>
+		<div class="cards-single">
+			<a href="compra.html">
+		<img src="img/f7.png" all="" title="">
+			</a>
+			<h2>Adidas</h2>
+			<p>vestido Adidas  R$ 249,90 <br> cod:8</p>
+			<a href="compra.html"><input type="submit" name="acao" value="Comprar"></a>
+		</div>
+		<div class="cards-single">
+			<a href="compra.html">
+		<img src="img/f8.jpeg" all="" title="">
+			</a>
+			<h2>Adidas</h2>
+			<p>Bolsa Adidas R$ 670,90 <br> cod:9</p>
+			<a href="compra.html"><input type="submit" name="acao" value="Comprar"></a>
+		</div>
+		<div class="cards-single">
+			<a href="compra.html">
+		<img src="img/f9.jpg" all="" title="">
+			</a>
+			<h2>Tênis</h2>
+			<p>Adidas familia <br> R$ 699,99 <br> cod:10</p>
+			<a href="compra.html"><input type="submit" name="acao" value="Comprar"></a>
+		</div>
+		<div class="cards-single">
+			<a href="compra.html">
+		<img src="img/f10.jpeg" all="" title="">
+			</a>
+			<h2>Puma</h2>
+			<p>Camisa Puma <br> R$ 44,90 <br> cod:11</p>
+			<a href="compra.html"><input type="submit" name="acao" value="Comprar"></a>
+		</div>
+		<div class="cards-single">
+			<a href="compra.html">
+		<img src="img/f11.jpeg" all="" title="">
+			</a>
+			<h2>Puma</h2>
+			<p>Shorts Puma R$ 100,00 <br> cod:12</p>
+			<a href="compra.html"><input type="submit" name="acao" value="Comprar"></a>
+		</div>
+	  <div class="clear"></div>
+  	</div>
+  </section>
+ <!-- rodape comeco-->
+ <footer class="footer1">
+   <div class="container"><!-- classe auxiliares-->
+		<div class="w33"><!-- classe auxiliares-->
+			<h2>links úteis</h2>
+			<a href="">Atendimento</a>
+			<a href="https://inscricoes.estacio.br/?gclid=Cj0KCQjwtZH7BRDzARIsAGjbK2ZGe_JP9m7TZP3BN4Sjfe-K9zCsXxIjk7KFd5VTNos1qkoJwRFHoQYaAiAmEALw_wcB">Estácio de sá</a>
+		</div>
+		<div class="w33"><!-- classe auxiliares-->
+			<h2>Conecte-se conosco</h2>
+			<div class="group-icons">
+				<a href="https://www.facebook.com/nenjoao"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.instagram.com/_nem080/"><i class="fa fa-instagram"></i></a>
+				 <a href="link whatssap"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+			</div>
+		</div>
+		
+
+		<div class="w33"> <!-- classe auxiliares-->
+			<h2>Aonde estamos?</h2>
+			<p><i class="fa fa-map-marker" aria-hidden="true"></i>Av. Aonde judas perdeu as botas 1010 - Coqueiros, Florianópolis - SC, 88088-000</p>
+			<p><i class="fa fa-phone" aria-hidden="true"></i>(xx)xxx-xxxx</p>
+		</div>
+		<div class="clear"></div>
+	</div>
+</footer>
+<footer class="footer2">
+   <div class="container">
+	   <p>Todos os direitos reservados </p>
+   </div>
+</footer>
+<!-- fim do rodape-->
+<script>
+	function myFunction() {
+  var x = document.getElementById("menu01");
+  if (x.className === "menu_principal01") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu_principal01";
+  }
+}
+
+//login
+// Get the modelo
+var modelo = document.getElementById('id01');
+        
+// When the user clicks anywhere outside of the modelo, close it
+window.onclick = function(event) {
+    if (event.target == modelo) {
+        modelo.style.display = "none";
+    }
+}
+</script>
+
+ </body>
+</html> 
+
+
+
+
+
+
+	 
